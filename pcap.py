@@ -27,7 +27,7 @@ def ports():
     cmd = 'tshark -r ' + pcap_file + ' -Y "tcp" -T fields -e tcp.srcport | sort | uniq -c | sort -nr'
     os.system(cmd)
 while True:
-    print("1.Top 10 visited websites\n\n2.User-Agent\n\n3.Connection Details.\n\n4.Grep String.\n\n5.List All IP.\n\n6.List All Ports.\n\n7.Exit.\n")
+    print("1.Top 10 visited websites\n\n2.User-Agent\n\n3.Connection Details\n\n4.Grep String\n\n5.List All IP\n\n6.List All Ports\n\n7.Exit\n")
     x= int(input(">>>"))
     if x == 1:
         print("Top 10 Visited Sites:")
